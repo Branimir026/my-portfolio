@@ -6,42 +6,52 @@
 
 body {
   background-color: #5d5b6a;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* NAVIGACIJA */
-#navigationList {
+#navbar {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
   width: 100vw;
-  height: 100px;
-  background-color: #00a087;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  font-family: "Lobster", cursive;
+  height: 80px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: rgb(93, 91, 106, 0.95);
 }
 
-li {
-  width: 100px;
+.navigationList {
+  width: 50%;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+
+.navigationList > ul > li {
+  width: 100%;
 }
 
 li > a {
   text-decoration: none;
   height: 100%;
   font-size: 2.5em;
+  color: #f5cdaa;
+}
+
+li > a:hover {
+  color: #ebe6e6;
 }
 
 /* WELCOME */
 #welcome {
   height: 100vh;
   min-height: 800px !important;
-  padding-top: 100px;
+  padding-top: 80px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -77,20 +87,21 @@ img {
 /* ABOUT */
 #about {
   height: 100vh;
-  min-height: 800px !important;
+  min-height: 920px !important;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   padding-top: 100px;
 }
 
 #about > h2 {
-  padding-top: 5vh;
+  padding: 30px 0px 30px 0px;
+  margin-bottom: 50px;
   color: #f5cdaa;
 }
 
 #about > p {
-  width: 65%;
-  margin: 3vh auto 3vh auto;
+  width: 60%;
+  margin: 30px auto 40px auto;
   color: #ebe6e6;
 }
 
@@ -102,8 +113,18 @@ p > a {
 /* PROJECTS */
 #projects {
   height: 100vh;
-  min-height: 800px !important;
-  padding: 100px 10vw 0px 10vw;
+  padding: 80px 10vw 0px 10vw;
+  min-height: 920px !important;
+  text-align: center;
+}
+
+#projects > h1 {
+  color: #f5cdaa;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.projects {
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -116,12 +137,15 @@ p > a {
   justify-self: center;
   text-align: center;
   display: grid;
+  font-size: 1.3em;
   color: #ebe6e6;
   border-radius: 25px;
+  margin-bottom: 30px;
 }
 
 #project > h3 {
   color: #f5cdaa;
+  margin-top: 20px;
 }
 
 #project > a {
@@ -130,10 +154,174 @@ p > a {
   color: #e8d4b4;
 }
 
+#project > a:hover {
+  color: #ebe6e6;
+}
+
 #project > a,
 .projectName,
 .projectInfo {
   justify-self: center;
   text-align: center;
   padding: 20px 20px 5px 20px;
+}
+
+/* FOOTER */
+#foot {
+  text-align: center;
+  color: #ebe6e6;
+  padding: 50px 0px 50px 0px;
+  height: 200px;
+  align-items: center;
+}
+
+#foot > h3 > a {
+  display: inline-block;
+  text-decoration: none;
+  color: #e8d4b4;
+}
+
+#foot > h3 > a:hover {
+  color: #f5cdaa;
+}
+
+.footer {
+  width: 20%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  align-self: center;
+  justify-self: center;
+  color: #ebe6e6;
+}
+
+.facebook:hover {
+  color: #4267b2;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.github:hover {
+  color: #211f1f;
+}
+
+@media only screen and (max-width: 600px) {
+  /* mobile phones */
+  /* NAVIGACIJA */
+  .navigationList {
+    width: 100%;
+  }
+
+  li > a {
+    font-size: 1.5em;
+  }
+
+  /* WELCOME */
+  #welcome {
+    /*height: 100vh;*/
+    min-height: 800px !important;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;
+    align-items: center;*/
+    text-align: center;
+    color: #f5cdaa;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .profilePicture,
+  .profile {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+  }
+
+  /* ABOUT */
+  #about {
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 50px;
+  }
+
+  #about > p {
+    width: 80%;
+    margin: 10px auto 10px auto;
+    color: #ebe6e6;
+  }
+
+  /* PROJECTS */
+  #projects {
+    height: 100%;
+    padding-top: 80px;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #project {
+    width: 250px;
+    background-color: rgba(250, 250, 209, 0.2);
+    height: 350px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    display: grid;
+    font-size: 1.1em;
+    color: #ebe6e6;
+    border-radius: 25px;
+    margin-bottom: 15px;
+  }
+
+  /* FOOTER */
+  .footer {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* NAVIGACIJA */
+  .navigationList {
+    width: 100%;
+  }
+
+  /* WELCOME */
+  .profilePicture,
+  .profile {
+    font-size: 1.5em;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  /* ABOUT */
+  #about {
+    height: 100%;
+    font-size: 1.5em;
+  }
+
+  /* PROJECT */
+  #project {
+    width: 250px;
+  }
 }

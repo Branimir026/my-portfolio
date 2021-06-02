@@ -1,6 +1,13 @@
 import React from "react";
 import "./App.css";
 import image from "./dinoIdle1.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faLinkedin,
+  faGithubSquare,
+} from "@fortawesome/free-brands-svg-icons";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
@@ -30,17 +37,70 @@ const projects = [
 
 const Navigation = () => {
   return (
-    <ul id="navigationList">
-      <li>
-        <a href="#welcome">HOME</a>
-      </li>
-      <li>
-        <a href="#about">ABOUT</a>
-      </li>
-      <li>
-        <a href="#projects">PROJECTS</a>
-      </li>
-    </ul>
+    <div id="navbar">
+      <ul className="navigationList">
+        <li>
+          <a href="#welcome">HOME</a>
+        </li>
+        <li>
+          <a href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a href="#projects">PROJECTS</a>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+const Footer = () => {
+  return (
+    <div id="foot">
+      <h3>
+        Contact me @{" "}
+        <a href="mailto:br.belic@gmail.com" target="_blank" rel="noreferrer">
+          br.belic@gmail.com
+        </a>
+      </h3>
+      <div className="footer">
+        <a
+          href="https://www.facebook.com/branimir.belic.5/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            className="icon facebook"
+            icon={faFacebookSquare}
+            size="3x"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/branimir-beli%C4%87-552845151/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            className="icon linkedin"
+            icon={faLinkedin}
+            size="3x"
+          />
+        </a>
+        <a
+          href="https://github.com/Branimir026"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            className="icon github"
+            icon={faGithubSquare}
+            size="3x"
+          />
+        </a>
+      </div>
+      <h5>
+        <FontAwesomeIcon icon={faCopyright} /> Branimir Belić 2021
+      </h5>
+    </div>
   );
 };
 
@@ -139,17 +199,20 @@ const Project = ({ name, info, sourceCode, publishedURL }) => {
 const Projects = () => {
   return (
     <div id="projects">
-      {projects.map((item) => {
-        return (
-          <Project
-            key={item.name}
-            name={item.name}
-            info={item.info}
-            sourceCode={item.sourceCodeURL}
-            publishedURL={item.publishedURL}
-          />
-        );
-      })}
+      <h1>Here You can check out my recent projects</h1>
+      <div className="projects">
+        {projects.map((item) => {
+          return (
+            <Project
+              key={item.name}
+              name={item.name}
+              info={item.info}
+              sourceCode={item.sourceCodeURL}
+              publishedURL={item.publishedURL}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
@@ -161,6 +224,7 @@ function App() {
       <Welcome />
       <About />
       <Projects />
+      <Footer />
     </div>
   );
 }
