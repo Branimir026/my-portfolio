@@ -110,6 +110,10 @@ p > a {
   color: #e8d4b4;
 }
 
+p > a:hover {
+  color: #ebe6e6;
+}
+
 /* PROJECTS */
 #projects {
   height: 100vh;
