@@ -6,7 +6,7 @@ const Project = ({ name, info, sourceCode, publishedURL, background }) => {
   return (
     <Col
       className="project d-flex flex-column justify-content-center"
-      xs={12}
+      xs={10}
       md={5}
       style={{
         backgroundImage: `url(${background})`,
