@@ -44,12 +44,12 @@ img {
 }
 
 .profilePicture {
-  border-top: 40px solid #5eaaa8;
+  border-top: 40px solid #293b5f;
   border-top-right-radius: 50%;
 }
 
 .profile {
-  border-bottom: 40px solid #5eaaa8;
+  border-bottom: 40px solid #293b5f;
   border-bottom-left-radius: 50%;
 }
 
@@ -74,7 +74,7 @@ img {
 
 #about > div > p {
   margin: 30px auto 40px auto;
-  color: #5eaaa8;
+  color: #293b5f;
 }
 
 #about > div > p > a {
@@ -132,7 +132,7 @@ img {
 }
 
 #footer h6 {
-  color: #5eaaa8;
+  color: #293b5f;
 }
 
 #footer a {
@@ -146,7 +146,7 @@ img {
 }
 
 .icon {
-  color: #5eaaa8;
+  color: #293b5f;
 }
 
 .facebook:hover {
