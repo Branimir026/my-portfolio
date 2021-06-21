@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.006fd783.chunk.css",
+    "main.css": "/my-portfolio/static/css/main.0a5490e6.chunk.css",
     "main.js": "/my-portfolio/static/js/main.cde2796f.chunk.js",
     "main.js.map": "/my-portfolio/static/js/main.cde2796f.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.6ad5f9c6.js",
@@ -10,7 +10,7 @@
     "static/js/2.f0213eec.chunk.js.map": "/my-portfolio/static/js/2.f0213eec.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
     "static/css/2.5a85dd4a.chunk.css.map": "/my-portfolio/static/css/2.5a85dd4a.chunk.css.map",
-    "static/css/main.006fd783.chunk.css.map": "/my-portfolio/static/css/main.006fd783.chunk.css.map",
+    "static/css/main.0a5490e6.chunk.css.map": "/my-portfolio/static/css/main.0a5490e6.chunk.css.map",
     "static/js/2.f0213eec.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.f0213eec.chunk.js.LICENSE.txt",
     "static/media/amazingMaze300.64ad171b.png": "/my-portfolio/static/media/amazingMaze300.64ad171b.png",
     "static/media/myself.79fbb6a3.png": "/my-portfolio/static/media/myself.79fbb6a3.png",
@@ -20,7 +20,7 @@
     "static/js/runtime-main.6ad5f9c6.js",
     "static/css/2.5a85dd4a.chunk.css",
     "static/js/2.f0213eec.chunk.js",
-    "static/css/main.006fd783.chunk.css",
+    "static/css/main.0a5490e6.chunk.css",
     "static/js/main.cde2796f.chunk.js"
   ]
 }
