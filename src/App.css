@@ -1,3 +1,5 @@
+@import "animate.css";
+
 * {
   margin: 0px;
   padding: 0px;
@@ -127,6 +129,8 @@ img {
 .project a:hover {
   color: #f05945;
   text-decoration: none;
+  -webkit-animation: jello 1s;
+  animation: jello 1s;
 }
 
 #footer {
