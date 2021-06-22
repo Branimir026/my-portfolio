@@ -46,8 +46,8 @@ const About = () => {
         <p>
           Eventually I stumbled upon <a href="https://reactjs.org/">ReactJS</a>{" "}
           and I was blown away by it's simplicity and abilities of it's
-          components. I understand there is still a long way ahead of me, but I
-          don't mind, it will be fun experience.
+          components. I understand there is still a long way ahead of me to
+          learn as much as I can, but I don't mind, it will be fun experience.
         </p>
       </Col>
     </Row>
