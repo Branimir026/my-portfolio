@@ -128,12 +128,12 @@ img {
 .projectName {
   color: #022e57;
   padding: 20px 0px 20px 0px;
-  text-decoration: underline;
 }
 
 .project a {
   color: #005a8d;
   padding: 20px 0px 20px 0px;
+  text-decoration: underline;
 }
 
 .project a:hover {
