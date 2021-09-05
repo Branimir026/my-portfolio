@@ -5,7 +5,7 @@ import myImg from "./myself.png";
 
 const Welcome = () => {
   return (
-    <Row id="welcome">
+    <Row id="HOME">
       <Col className="profilePicture" xs={12} md={6}>
         <img
           className="animate__animated animate__fadeInLeft"

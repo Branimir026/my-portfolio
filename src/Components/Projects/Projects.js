@@ -39,7 +39,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Row id="projects">
+    <Row id="PROJECTS">
       <Col>
         <h1>Here You can check out my recent projects</h1>
         <Row className="justify-content-center">

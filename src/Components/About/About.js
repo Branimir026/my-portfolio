@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 const About = () => {
   return (
-    <Row id="about">
+    <Row id="ABOUT">
       <Col>
         <h2>About me</h2>
         <p>
