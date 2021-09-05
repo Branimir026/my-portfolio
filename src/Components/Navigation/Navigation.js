@@ -14,11 +14,9 @@ const Navigation = () => {
         <span onClick={goTo}>HOME</span>
       </Col>
       <Col xs={4} md={4}>
-        {/*<a href="#about">ABOUT</a>*/}
         <span onClick={goTo}>ABOUT</span>
       </Col>
       <Col xs={4} md={4}>
-        {/*<a href="#projects">PROJECTS</a>*/}
         <span onClick={goTo}>PROJECTS</span>
       </Col>
     </Row>
