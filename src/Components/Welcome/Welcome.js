@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import myImg from "./myself.png";
+import myImg from "./branimir.png";
 
 const Welcome = () => {
   return (
