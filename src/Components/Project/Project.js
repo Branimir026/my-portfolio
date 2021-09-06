@@ -3,26 +3,45 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 const Project = ({ name, info, sourceCode, publishedURL, background }) => {
+  const removeBackground = (e) => {
+    const targetElement = e.currentTarget;
+    targetElement.style.background = `linear-gradient(rgba(55, 12, 52, 0.9), rgba(55, 12, 52, 0.9)), url(${background})`;
+    targetElement.style.backgroundSize = "cover";
+    targetElement.style.backgroundRepeat = "no-repeat";
+    targetElement.style.backgroundPosition = "center";
+  };
+
+  const addBackground = (e) => {
+    const targetElement = e.currentTarget;
+    targetElement.style.background = `linear-gradient(rgba(55, 12, 52, 0), rgba(55, 12, 52, 0)), url(${background})`;
+    targetElement.style.backgroundSize = "cover";
+    targetElement.style.backgroundRepeat = "no-repeat";
+    targetElement.style.backgroundPosition = "center";
+  };
+
   return (
     <Col
+      onMouseOver={removeBackground}
+      onMouseLeave={addBackground}
       className="project d-flex flex-column justify-content-center"
       xs={10}
       md={5}
       style={{
-        backgroundImage: `url(${background})`,
+        background: `linear-gradient(rgba(55, 12, 52, 0), rgba(55, 12, 52, 0)), url(${background})`,
         backgroundSize: "cover",
+        backgroundRepea: "no-repeat",
         backgroundPosition: "center",
       }}
     >
-      <Row className="justify-content-center">
+      <Row className="projName justify-content-center">
         <h3 className="projectName">{name}</h3>
       </Row>
-      <Row className="justify-content-center">
+      <Row className="projInfo justify-content-center">
         <p className="projectInfo">{info}</p>
       </Row>
 
       {sourceCode && (
-        <Row className="justify-content-center">
+        <Row className="projCode justify-content-center">
           <a
             href={sourceCode}
             className="sourceCode"
@@ -34,7 +53,7 @@ const Project = ({ name, info, sourceCode, publishedURL, background }) => {
         </Row>
       )}
 
-      <Row className="justify-content-center">
+      <Row className="projPubl justify-content-center">
         <a
           href={publishedURL}
           className="published"
