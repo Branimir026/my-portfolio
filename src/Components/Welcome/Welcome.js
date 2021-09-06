@@ -6,7 +6,8 @@ import ParticleBackground from "./ParticleBackground";
 
 const Welcome = () => {
   const changeColorOnHover = (e) => {
-    e.target.style.color = "#ffd700";
+    const color = Math.floor(Math.random() * 16777215).toString(16);
+    e.target.style.color = `#${color}`;
   };
 
   const changeColorOnExit = (e) => {
