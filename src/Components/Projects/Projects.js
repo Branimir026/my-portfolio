@@ -2,10 +2,10 @@ import React from "react";
 import Project from "../Project/Project.js";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import todoListImage from "./todoList300.png";
-import weatherAppImage from "./weatherApp300.png";
-import convertToRomanImage from "./convertToRoman300.png";
-import amazingMazeImage from "./amazingMaze300.png";
+import todoListImage from "./todoList_400x225.png";
+import weatherAppImage from "./weatherApp_400x225.png";
+import convertToRomanImage from "./convertToRoman_400x225.png";
+import amazingMazeImage from "./amazingMaze_400x225.png";
 
 const projects = [
   {
