@@ -15,14 +15,6 @@ const Footer = () => {
       id="footer"
       className="flex-column justify-content-center align-items-center"
     >
-      <Col className="d-flex justify-content-center" xs={12} md={6}>
-        <h6>
-          Contact me @{" "}
-          <a href="mailto:br.belic@gmail.com" target="_blank" rel="noreferrer">
-            br.belic@gmail.com
-          </a>
-        </h6>
-      </Col>
       <Col className="icons d-flex justify-content-around" xs={12} md={6}>
         <a
           href="https://www.facebook.com/branimir.belic.5/"
