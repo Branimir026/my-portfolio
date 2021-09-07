@@ -7,7 +7,7 @@ import { isDesktop } from "react-device-detect";
 const Project = ({ name, info, sourceCode, publishedURL, background }) => {
   const removeBackground = (e) => {
     const targetElement = e.currentTarget;
-    targetElement.style.background = `linear-gradient(rgba(55, 12, 52, 0.9), rgba(55, 12, 52, 0.9)), url(${background})`;
+    targetElement.style.background = `linear-gradient(rgba(17, 78, 96, 0.9), rgba(17, 78, 96, 0.9)), url(${background})`;
     targetElement.style.backgroundSize = "cover";
     targetElement.style.backgroundRepeat = "no-repeat";
     targetElement.style.backgroundPosition = "center";
@@ -15,7 +15,7 @@ const Project = ({ name, info, sourceCode, publishedURL, background }) => {
 
   const addBackground = (e) => {
     const targetElement = e.currentTarget;
-    targetElement.style.background = `linear-gradient(rgba(55, 12, 52, 0), rgba(55, 12, 52, 0)), url(${background})`;
+    targetElement.style.background = `linear-gradient(rgba(17, 78, 96, 0), rgba(17, 78, 96, 0)), url(${background})`;
     targetElement.style.backgroundSize = "cover";
     targetElement.style.backgroundRepeat = "no-repeat";
     targetElement.style.backgroundPosition = "center";
@@ -31,13 +31,13 @@ const Project = ({ name, info, sourceCode, publishedURL, background }) => {
       style={
         isDesktop
           ? {
-              background: `linear-gradient(rgba(55, 12, 52, 0), rgba(55, 12, 52, 0)), url(${background})`,
+              background: `linear-gradient(rgba(17, 78, 96, 0), rgba(17, 78, 96, 0)), url(${background})`,
               backgroundSize: "cover",
               backgroundRepea: "no-repeat",
               backgroundPosition: "center",
             }
           : {
-              background: `linear-gradient(rgba(55, 12, 52, 0.9), rgba(55, 12, 52, 0.9)), url(${background})`,
+              background: `linear-gradient(rgba(17, 78, 96, 0.9), rgba(17, 78, 96, 0.9)), url(${background})`,
               backgroundSize: "cover",
               backgroundRepea: "no-repeat",
               backgroundPosition: "center",
