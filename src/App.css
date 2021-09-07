@@ -11,7 +11,7 @@ html {
 }
 
 .App {
-  background-color: #370c34;
+  background-color: #114e60;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -19,18 +19,17 @@ html {
   text-align: center;
   font-size: 2.3em;
   padding: 10px 0px 10px 0px;
-  background-color: #370c34;
   margin: 0px !important;
 }
 
 .navigation > div > span {
-  color: #d9cab3;
+  color: #f4eee8;
   text-decoration: none;
 }
 
 .navigation > div > span:hover {
   text-decoration: underline;
-  color: #ffd700;
+  color: #f5cebe;
 }
 
 .canvas {
@@ -79,29 +78,29 @@ img {
   padding: 0px 20px;
   margin-top: 50px;
   border-radius: 7px;
-  background: linear-gradient(110deg, #532351 50%, #2e042b 50%);
+  background: linear-gradient(110deg, #f4eee8 50%, #f5cebe 50%);
 }
 
 #ABOUT h2 {
   padding: 30px 0px 30px 0px;
   margin-bottom: 50px;
-  color: #ffd700;
+  color: #114e60;
   font-size: 1.8em;
 }
 
 #ABOUT > div > p {
   margin: 30px auto 40px auto;
-  color: #d9cab3;
+  color: #114e60;
 }
 
 #ABOUT > div > p > a {
   text-decoration: none;
-  color: #ffffff;
+  color: #393232;
 }
 
 #ABOUT > div > p > a:hover {
-  color: #ffd700;
-  text-decoration: underline;
+  color: #45526c;
+  text-decoration: none;
 }
 
 #PROJECTS {
@@ -111,12 +110,16 @@ img {
   align-items: center;
   border-radius: 7px;
   margin-top: 50px;
-  background: linear-gradient(70deg, rgb(78, 30, 83) 33%, rgba(0, 0, 0, 0) 33%),
-    linear-gradient(70deg, #5e4f0e 66%, #685e3e 66%);
+  background: linear-gradient(
+      60deg,
+      rgb(245, 206, 190) 33%,
+      rgba(245, 206, 190, 0) 33%
+    ),
+    linear-gradient(60deg, rgb(153, 146, 146) 66%, #f4eee8 66%);
 }
 
 #PROJECTS > div > h1 {
-  color: #ffd700;
+  color: #114e60;
   margin-bottom: 40px;
   margin-top: 20px;
 }
@@ -125,7 +128,7 @@ img {
   height: 300px;
   font-size: 1.3em;
   text-align: center;
-  color: #d9cab3;
+  color: #f4eee8;
   border-radius: 5px;
   margin: 30px;
   padding-bottom: 30px;
@@ -153,7 +156,7 @@ img {
 }
 
 .projectName {
-  color: #ffd700;
+  color: #f5cebe;
   padding: 10px 0px;
   margin-top: 15px;
 }
@@ -165,42 +168,41 @@ img {
 }
 
 .project a:hover {
-  color: #ffd700;
+  color: #f4eee8;
   text-decoration: none;
   -webkit-animation: jello 1s;
   animation: jello 1s;
 }
 
 #CONTACT {
-  color: #d9cab3;
+  color: #114e60;
   text-align: center;
   height: 350px;
   border-radius: 7px;
   margin-top: 20px;
   background: linear-gradient(
       100deg,
-      rgb(95, 14, 90) 45%,
-      rgba(95, 14, 90, 0) 45%
+      rgb(153, 146, 146) 45%,
+      rgba(153, 146, 146, 0) 45%
     ),
-    linear-gradient(10deg, rgb(112, 35, 107) 55%, rgb(155, 57, 148) 55%);
+    linear-gradient(10deg, #f4eee8 55%, rgb(245, 206, 190) 55%);
 }
 
 #CONTACT a {
   display: inline-block;
   text-decoration: none;
-  color: #ffd700;
+  color: #393232;
   margin-top: 20px;
 }
 
 #CONTACT a:hover {
-  color: white;
+  color: #114e60;
 }
 
 #footer {
   margin: 0px;
   margin-top: 30px;
   padding: 20px 0px 20px 0px;
-  background-color: #9b3994;
 }
 
 #footer h6 {
