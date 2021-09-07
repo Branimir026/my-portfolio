@@ -2,6 +2,8 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
+import { isDesktop } from "react-device-detect";
+
 const Project = ({ name, info, sourceCode, publishedURL, background }) => {
   const removeBackground = (e) => {
     const targetElement = e.currentTarget;
@@ -21,17 +23,26 @@ const Project = ({ name, info, sourceCode, publishedURL, background }) => {
 
   return (
     <Col
-      onMouseOver={removeBackground}
-      onMouseLeave={addBackground}
-      className="project d-flex flex-column justify-content-center"
+      onMouseOver={isDesktop ? removeBackground : () => false}
+      onMouseLeave={isDesktop ? addBackground : () => false}
+      className="project d-flex flex-column justify-content-center animate__animated animate__fadeInRight"
       xs={10}
       md={5}
-      style={{
-        background: `linear-gradient(rgba(55, 12, 52, 0), rgba(55, 12, 52, 0)), url(${background})`,
-        backgroundSize: "cover",
-        backgroundRepea: "no-repeat",
-        backgroundPosition: "center",
-      }}
+      style={
+        isDesktop
+          ? {
+              background: `linear-gradient(rgba(55, 12, 52, 0), rgba(55, 12, 52, 0)), url(${background})`,
+              backgroundSize: "cover",
+              backgroundRepea: "no-repeat",
+              backgroundPosition: "center",
+            }
+          : {
+              background: `linear-gradient(rgba(55, 12, 52, 0.9), rgba(55, 12, 52, 0.9)), url(${background})`,
+              backgroundSize: "cover",
+              backgroundRepea: "no-repeat",
+              backgroundPosition: "center",
+            }
+      }
     >
       <Row className="projName justify-content-center">
         <h3 className="projectName">{name}</h3>
