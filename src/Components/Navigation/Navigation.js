@@ -10,14 +10,17 @@ const Navigation = () => {
 
   return (
     <Row className="navigation justify-content-around">
-      <Col xs={4} md={4}>
+      <Col xs={3} md={3}>
         <span onClick={goTo}>HOME</span>
       </Col>
-      <Col xs={4} md={4}>
+      <Col xs={3} md={3}>
         <span onClick={goTo}>ABOUT</span>
       </Col>
-      <Col xs={4} md={4}>
+      <Col xs={3} md={3}>
         <span onClick={goTo}>PROJECTS</span>
+      </Col>
+      <Col xs={3} md={3}>
+        <span onClick={goTo}>CONTACT</span>
       </Col>
     </Row>
   );
