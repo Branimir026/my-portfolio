@@ -25,7 +25,7 @@ const Project = ({ name, info, sourceCode, publishedURL, background }) => {
     <Col
       onMouseOver={isDesktop ? removeBackground : () => false}
       onMouseLeave={isDesktop ? addBackground : () => false}
-      className="project d-flex flex-column justify-content-center animate__animated animate__fadeInRight"
+      className="project d-flex flex-column justify-content-center"
       xs={10}
       md={5}
       style={
