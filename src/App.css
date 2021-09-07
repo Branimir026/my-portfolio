@@ -10,20 +10,17 @@ html {
   scroll-behavior: smooth;
 }
 
-#root {
-  background-color: #efe3d0;
-}
-
 .App {
   background-color: #370c34;
   font-family: "Josefin Sans", sans-serif;
-  border-radius: 20px;
 }
 
 .navigation {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.3em;
   padding: 10px 0px 10px 0px;
+  background-color: #370c34;
+  margin: 0px !important;
 }
 
 .navigation > div > span {
@@ -50,9 +47,10 @@ html {
 #HOME {
   color: #d9cab3;
   height: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
+  margin: 0;
 }
 
 img {
@@ -77,15 +75,18 @@ img {
   height: 100%;
   min-height: 100vh;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.6em;
   padding: 0px 20px;
+  margin-top: 50px;
+  border-radius: 7px;
+  background: linear-gradient(110deg, #532351 50%, #2e042b 50%);
 }
 
 #ABOUT h2 {
   padding: 30px 0px 30px 0px;
   margin-bottom: 50px;
   color: #ffd700;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 #ABOUT > div > p {
@@ -108,65 +109,110 @@ img {
   min-height: 100vh;
   text-align: center;
   align-items: center;
+  border-radius: 7px;
+  margin-top: 50px;
+  background: linear-gradient(70deg, rgb(78, 30, 83) 33%, rgba(0, 0, 0, 0) 33%),
+    linear-gradient(70deg, #5e4f0e 66%, #685e3e 66%);
 }
 
 #PROJECTS > div > h1 {
-  color: #005a8d;
+  color: #ffd700;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .project {
-  min-height: 400px;
+  height: 300px;
   font-size: 1.3em;
   text-align: center;
-  color: #022e57;
-  border-radius: 25px;
+  color: #d9cab3;
+  border-radius: 5px;
   margin: 30px;
   padding-bottom: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.projName,
+.projInfo,
+.projCode,
+.projPubl {
+  display: none !important;
+}
+
+.project:hover .projName,
+.project:hover .projInfo,
+.project:hover .projCode,
+.project:hover .projPubl {
+  display: block !important;
 }
 
 .project > .row {
-  margin: 0px 15px 0px 15px;
+  margin: 0px 5px 0px 5px;
 }
 
 .projectName {
-  color: #022e57;
-  padding: 20px 0px 20px 0px;
+  color: #ffd700;
+  padding: 10px 0px;
+  margin-top: 15px;
 }
 
 .project a {
-  color: #005a8d;
-  padding: 20px 0px 20px 0px;
+  color: #d9cab3;
+  padding: 5px 0px;
   text-decoration: underline;
 }
 
 .project a:hover {
-  color: white;
+  color: #ffd700;
   text-decoration: none;
   -webkit-animation: jello 1s;
   animation: jello 1s;
 }
 
-#footer {
-  margin: 30px 0px 0px 0px;
+#CONTACT {
+  color: #d9cab3;
+  text-align: center;
+  height: 350px;
+  border-radius: 7px;
+  margin-top: 20px;
+  background: linear-gradient(
+      100deg,
+      rgb(95, 14, 90) 45%,
+      rgba(95, 14, 90, 0) 45%
+    ),
+    linear-gradient(10deg, rgb(112, 35, 107) 55%, rgb(155, 57, 148) 55%);
 }
 
-#footer h6 {
-  color: #293b5f;
-}
-
-#footer a {
+#CONTACT a {
   display: inline-block;
   text-decoration: none;
-  color: #005a8d;
+  color: #ffd700;
+  margin-top: 20px;
 }
 
-#footer a:hover {
+#CONTACT a:hover {
   color: white;
 }
 
+#footer {
+  margin: 0px;
+  margin-top: 30px;
+  padding: 20px 0px 20px 0px;
+  background-color: #9b3994;
+}
+
+#footer h6 {
+  color: #d9cab3;
+}
+
+.icons {
+  padding-bottom: 20px;
+}
+
 .icon {
-  color: #293b5f;
+  color: #d9cab3;
 }
 
 .facebook:hover {
@@ -181,7 +227,7 @@ img {
   color: #211f1f;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
   .navigation {
     font-size: 1.2em;
   }
@@ -208,5 +254,23 @@ img {
 
   .github {
     color: #211f1f;
+  }
+
+  .projName,
+  .projInfo,
+  .projCode,
+  .projPubl {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .navigation {
+    font-size: 1em;
+  }
+
+  .navigation > div {
+    padding: 0px !important;
+    margin: 0px;
   }
 }
