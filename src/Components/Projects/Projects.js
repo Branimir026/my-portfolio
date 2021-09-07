@@ -2,6 +2,7 @@ import React from "react";
 import Project from "../Project/Project.js";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 import todoListImage from "./todoList_400x225.png";
 import weatherAppImage from "./weatherApp_400x225.png";
 import convertToRomanImage from "./convertToRoman_400x225.png";
@@ -39,25 +40,31 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Row id="PROJECTS">
-      <Col>
-        <h1>Here You can check out my recent projects</h1>
-        <Row className="justify-content-center">
-          {projects.map((item) => {
-            return (
-              <Project
-                key={item.name}
-                name={item.name}
-                info={item.info}
-                sourceCode={item.sourceCodeURL}
-                publishedURL={item.publishedURL}
-                background={item.backgroundImage}
-              />
-            );
-          })}
-        </Row>
-      </Col>
-    </Row>
+    <Container>
+      <Row id="PROJECTS">
+        <Col>
+          <h1>
+            Here are some of my projects.
+            <br />
+            Feel free to check them out.
+          </h1>
+          <Row className="justify-content-center">
+            {projects.map((item) => {
+              return (
+                <Project
+                  key={item.name}
+                  name={item.name}
+                  info={item.info}
+                  sourceCode={item.sourceCodeURL}
+                  publishedURL={item.publishedURL}
+                  background={item.backgroundImage}
+                />
+              );
+            })}
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
