@@ -1,14 +1,14 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 100,
+      value: 150,
       density: {
         enable: true,
         value_area: 800,
       },
     },
     color: {
-      value: "#ffd700",
+      value: "#fff",
     },
     shape: {
       type: "circle",
@@ -49,12 +49,12 @@ const particlesConfig = {
       enable: true,
       distance: 150,
       color: "#ffffff",
-      opacity: 0.4,
+      opacity: 0.6,
       width: 1,
     },
     move: {
       enable: true,
-      speed: 4,
+      speed: 3,
       direction: "none",
       random: false,
       straight: false,
@@ -76,27 +76,27 @@ const particlesConfig = {
       },
       onclick: {
         enable: true,
-        mode: "push",
+        mode: "repulse",
       },
       resize: true,
     },
     modes: {
       grab: {
-        distance: 250,
+        distance: 300,
         line_linked: {
           opacity: 1,
         },
       },
       bubble: {
         distance: 150,
-        size: 12,
+        size: 15,
         duration: 1,
         opacity: 8,
         speed: 3,
       },
       repulse: {
-        distance: 100,
-        duration: 0.4,
+        distance: 200,
+        duration: 0.7,
       },
       push: {
         particles_nb: 4,
