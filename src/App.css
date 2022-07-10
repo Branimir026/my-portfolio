@@ -75,10 +75,10 @@ img {
   min-height: 100vh;
   align-items: center;
   font-size: 1.6em;
-  padding: 0px 20px;
+  padding: 0px 10rem 3rem 10rem;
   margin-top: 50px;
   border-radius: 7px;
-  background: linear-gradient(110deg, #f4eee8 50%, #f5cebe 50%);
+  background: linear-gradient(110deg, #afcdca 50%, #9dbdbb 50%);
 }
 
 #ABOUT h2 {
@@ -110,12 +110,14 @@ img {
   align-items: center;
   border-radius: 7px;
   margin-top: 50px;
-  background: linear-gradient(
+  /* background: linear-gradient(
       60deg,
       rgb(245, 206, 190) 33%,
       rgba(245, 206, 190, 0) 33%
     ),
-    linear-gradient(60deg, rgb(153, 146, 146) 66%, #f4eee8 66%);
+    linear-gradient(60deg, rgb(153, 146, 146) 66%, #f4eee8 66%); */
+  background: linear-gradient(60deg, #afcdca 33%, rgba(245, 206, 190, 0) 33%),
+    linear-gradient(60deg, #79a19e 66%, #9dbdbb 66%);
 }
 
 #PROJECTS > div > h1 {
@@ -180,12 +182,14 @@ img {
   height: 350px;
   border-radius: 7px;
   margin-top: 20px;
-  background: linear-gradient(
+  /* background: linear-gradient(
       100deg,
       rgb(153, 146, 146) 45%,
       rgba(153, 146, 146, 0) 45%
     ),
-    linear-gradient(10deg, #f4eee8 55%, rgb(245, 206, 190) 55%);
+    linear-gradient(10deg, #f4eee8 55%, rgb(245, 206, 190) 55%); */
+  background: linear-gradient(100deg, #afcdca 33%, rgba(245, 206, 190, 0) 33%),
+    linear-gradient(10deg, #79a19e 66%, #9dbdbb 66%);
 }
 
 #CONTACT a {
