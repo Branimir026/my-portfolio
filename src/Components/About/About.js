@@ -27,20 +27,14 @@ const About = () => {
             ing. techn. inf.
           </p>
           <p>
-            In the last few months of college along with learning web design I
-            started to get more and more interested in game design and{" "}
-            <a href="https://unity.com/">Unity3D</a>. After I got familiar with
-            it I finished my first simple 3D video game called{" "}
-            <a href="https://bazzix.itch.io/amazing-maze">Amazing Maze</a>.
-            There were a lot of obstacles on the way, but I pushed through.
+            I've been working as a professional{" "}
+            <a href="https://vuejs.org/">vue.js</a> developer for a little less
+            than a year now, and I love it. I have good understanding of vuex
+            and vue-router.
           </p>
           <p>
-            I became more interested in web design again and I started to learn
-            Javascript. Eventually, I stumbled upon{" "}
-            <a href="https://reactjs.org/">ReactJS</a> and I was immediately
-            interested in it. Ever since I'm learning more and more. I
-            understand there is still a long way ahead of me to learn as much as
-            I can, but I don't mind, it will be fun experience.
+            I'm familiar with scss, and have basic knowledge and understanding
+            about graphql.
           </p>
           <p>
             In my spare time I like to be outdoors and do things like hiking or
