@@ -41,7 +41,8 @@ const About = () => {
             playing some team sport with friends.
           </p>
           <p>
-            I'm skilled in HTML, CSS, Bootstrap, Javascript, ReactJS and GitHub.
+            I have good knowledge of HTML, CSS, Bootstrap, SCSS, Javascript,
+            Vue.js, ReactJS and GitHub.
           </p>
         </Col>
       </Row>
