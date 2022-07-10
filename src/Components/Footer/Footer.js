@@ -52,7 +52,8 @@ const Footer = () => {
       </Col>
       <Col className="d-flex justify-content-center" xs={12} md={6}>
         <h6>
-          <FontAwesomeIcon icon={faCopyright} /> Branimir Belić 2021
+          <FontAwesomeIcon icon={faCopyright} /> Branimir Belić{" "}
+          {new Date().getFullYear()}
         </h6>
       </Col>
     </Row>
