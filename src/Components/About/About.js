@@ -30,7 +30,7 @@ const About = () => {
             I've been working as a professional{" "}
             <a href="https://vuejs.org/">vue.js</a> developer for a little less
             than a year now, and I love it. I have good understanding of vuex
-            and vue-router.
+            and vue-router. Every once in a while I do some PHP related tasks.
           </p>
           <p>
             I'm familiar with scss, and have basic knowledge and understanding
